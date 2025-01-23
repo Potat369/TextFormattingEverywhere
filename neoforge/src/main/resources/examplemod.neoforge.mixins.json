@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.examplemod.mixin",
+  "package": "potat369.textformattingeverywhere.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [
