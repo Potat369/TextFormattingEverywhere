@@ -19,12 +19,8 @@
     ],
     "depends": {
         "fabricloader": "*",
-        "fabric-api": "*",
         "minecraft": "*",
         "java": ">=${java_version}"
-    },
-    "suggests": {
-        "another-mod": "*"
     }
 }
   
