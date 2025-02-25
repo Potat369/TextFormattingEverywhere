@@ -11,7 +11,7 @@
         "sources": "https://github.com/Potat369/Text-Formatting-Everywhere"
     },
     "license": "${license}",
-    "icon": "${mod_id}.png",
+    "icon": "assets/${mod_id}/icon.png",
     "environment": "client",
     "mixins": [
         "${mod_id}.mixins.json",
