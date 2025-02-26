@@ -12,7 +12,7 @@
     },
     "license": "${license}",
     "icon": "assets/${mod_id}/icon.png",
-    "environment": "client",
+    "environment": "*",
     "mixins": [
         "${mod_id}.mixins.json",
         "${mod_id}.fabric.mixins.json"
