@@ -8,7 +8,7 @@
         "${mod_author}"
     ],
     "contact": {
-        "sources": "https://github.com/Potat369/Text-Formatting-Everywhere"
+        "sources": "https://github.com/Potat369/TextFormattingEverywhere"
     },
     "license": "${license}",
     "icon": "assets/${mod_id}/icon.png",
