@@ -51,6 +51,8 @@ jobs:
           name: "${{env.VERSION}}"
           version: "${{env.VERSION}}"
           version-type: release
+          modrinth-featured: true
+          modrinth-unfeature-mode: "any"
 
           loaders: |
             fabric
