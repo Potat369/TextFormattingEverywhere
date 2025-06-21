@@ -45,11 +45,11 @@ jobs:
           modrinth-id: 1ury0R3s
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
-          github-tag: "v${{env.VERSION}}"
+          github-tag: "v2.0.2"
           github-token: "${{secrets.GH_TOKEN}}"
 
-          name: "${{env.VERSION}}"
-          version: "${{env.VERSION}}"
+          name: "2.0.2"
+          version: "2.0.2"
           version-type: release
           modrinth-featured: true
           modrinth-unfeature-mode: "any"
@@ -59,8 +59,9 @@ jobs:
             quilt
             forge
             neoforge
-          changelog: '${{env.CHANGELOG}}'
-          game-versions: "${{env.MINECRAFT_VERSION_RANGE}}"
-          java: "${{env.JAVA_VERSION}}"
+          changelog: |
+            "Allow formatting on signs"
+          game-versions: ">=1.20.5"
+          java: 21
 
-          files: build/merged/!(*-@(dev|sources|javadoc))
+          files: build/merged/*.jar
