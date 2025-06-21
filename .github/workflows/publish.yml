@@ -42,7 +42,7 @@ jobs:
           curseforge-id: 1152847
           curseforge-token: "${{secrets.CURSEFORGE_TOKEN}}"
 
-          modrinth-id: text-formatting-everywhere
+          modrinth-id: 1ury0R3s
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
           github-tag: "v${{env.VERSION}}"
