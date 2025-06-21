@@ -4,9 +4,7 @@
   "package": "potat369.textformattingeverywhere.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
-  "client": [
-    "StringUtilMixin"
-  ],
+  "client": [],
   "server": [],
   "injectors": {
     "defaultRequire": 1
