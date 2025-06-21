@@ -57,7 +57,7 @@ jobs:
             quilt
             forge
             neoforge
-          changelog: '${env.CHANGELOG}'
+          changelog: '${{env.CHANGELOG}}'
           game-versions: "${{env.MINECRAFT_VERSION_RANGE}}"
           java: "${{env.JAVA_VERSION}}"
 
