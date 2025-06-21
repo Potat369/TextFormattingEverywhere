@@ -46,7 +46,7 @@ jobs:
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
           github-tag: "v${{env.VERSION}}"
-          github-token: "${{secrets.GITHUB_TOKEN}}"
+          github-token: "${{secrets.GH_TOKEN}}"
 
           name: "${{env.RELEASE_NAME}}"
           version: "${{env.VERSION}}"
