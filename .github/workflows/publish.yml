@@ -40,13 +40,13 @@ jobs:
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           curseforge-id: 1152847
-          curseforge-token: "${{env.CURSEFORGE_TOKEN}}"
+          curseforge-token: "${{secrets.CURSEFORGE_TOKEN}}"
 
           modrinth-id: text-formatting-everywhere
-          modrinth-token: "${{env.MODRINTH_TOKEN}}"
+          modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
           github-tag: "v${{env.VERSION}}"
-          github-token: "${{env.GITHUB_TOKEN}}"
+          github-token: "${{secrets.GITHUB_TOKEN}}"
 
           name: "${{env.RELEASE_NAME}}"
           version: "${{env.VERSION}}"
