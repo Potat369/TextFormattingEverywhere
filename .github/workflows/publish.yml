@@ -60,6 +60,6 @@ jobs:
             neoforge
           changelog: '${env.CHANGELOG}'
           game-versions: "${{env.MINECRAFT_VERSION_RANGE}}"
-          java: "${{env.JAVA_VERSION}}"k
+          java: "${{env.JAVA_VERSION}}"
 
           files: build/merged/!(*-@(dev|sources|javadoc))
