@@ -39,10 +39,10 @@ jobs:
       - name: Publish (CurseForge/Modrinth/GitHub)
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          curseforge-id: 123456
+          curseforge-id: 1152847
           curseforge-token: "${{env.CURSEFORGE_TOKEN}}"
 
-          modrinth-id: 1q2w3e4r
+          modrinth-id: text-formatting-everywhere
           modrinth-token: "${{env.MODRINTH_TOKEN}}"
 
           github-tag: "v${{env.VERSION}}"
@@ -51,7 +51,6 @@ jobs:
           name: "${{env.RELEASE_NAME}}"
           version: "${{env.VERSION}}"
           version-type: release
-          changelog-file: CHANGELOG.md
 
           loaders: |
             fabric
