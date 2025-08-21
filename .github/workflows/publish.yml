@@ -65,7 +65,7 @@ jobs:
           modrinth-id: 1ury0R3s
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
-          name: "${{steps.get_version.outputs.version}}"
+          name: "Fabirc/Quilt ${{steps.get_version.outputs.version}}"
           version: "${{steps.get_version.outputs.version}}"
           version-type: release
           modrinth-featured: true
@@ -90,7 +90,7 @@ jobs:
           modrinth-id: 1ury0R3s
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
-          name: "${{steps.get_version.outputs.version}}"
+          name: "Forge ${{steps.get_version.outputs.version}}"
           version: "${{steps.get_version.outputs.version}}"
           version-type: release
           modrinth-featured: true
@@ -118,7 +118,7 @@ jobs:
           github-tag: "v${{steps.get_version.outputs.version}}"
           github-token: "${{secrets.GH_TOKEN}}"
 
-          name: "${{steps.get_version.outputs.version}}"
+          name: "Neoforge ${{steps.get_version.outputs.version}}"
           version: "${{steps.get_version.outputs.version}}"
           version-type: release
           modrinth-featured: true
