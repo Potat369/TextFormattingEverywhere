@@ -34,6 +34,7 @@ jobs:
         run: ./gradlew clean build
 
       - name: Get Version
+        id: get_version
         run: |
           VERSION=$(grep "^version" gradle.properties | cut -d'=' -f2)
           echo "version=$VERSION" >> $GITHUB_OUTPUT
