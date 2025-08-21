@@ -1,0 +1,1 @@
+- Get rid of single-jar as it breaks forge and neoforge
