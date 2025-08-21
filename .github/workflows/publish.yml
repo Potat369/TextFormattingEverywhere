@@ -68,6 +68,7 @@ jobs:
           name: "Fabirc/Quilt ${{steps.get_version.outputs.version}}"
           version: "${{steps.get_version.outputs.version}}"
           version-type: release
+          game-version-filter: any
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
 
@@ -93,6 +94,7 @@ jobs:
           name: "Forge ${{steps.get_version.outputs.version}}"
           version: "${{steps.get_version.outputs.version}}"
           version-type: release
+          game-version-filter: any
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
 
@@ -121,6 +123,7 @@ jobs:
           name: "Neoforge ${{steps.get_version.outputs.version}}"
           version: "${{steps.get_version.outputs.version}}"
           version-type: release
+          game-version-filter: any
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
 
