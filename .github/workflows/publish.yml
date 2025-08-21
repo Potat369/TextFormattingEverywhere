@@ -41,19 +41,19 @@ jobs:
       - name: Publish (GitHub)
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          github-tag: "v${{env.version}}"
+          github-tag: "v${{steps.get_version.outputs.version}}"
           github-token: "${{secrets.GH_TOKEN}}"
 
-          name: "${{env.version}}"
-          version: "${{env.version}}"
+          name: "${{steps.get_version.outputs.version}}"
+          version: "${{steps.get_version.outputs.version}}"
           version-type: release
 
           changelog-file: CHANGELOG.*
 
           files: |
-            neoforge/build/libs/*${{env.version}}.jar
-            fabric/build/libs/*${{env.version}}.jar
-            forge/build/libs/*${{env.version}}.jar
+            neoforge/build/libs/*${{steps.get_version.outputs.version}}.jar
+            fabric/build/libs/*${{steps.get_version.outputs.version}}.jar
+            forge/build/libs/*${{steps.get_version.outputs.version}}.jar
 
       - name: Publish (Fabric/Quilt)
         uses: Kir-Antipov/mc-publish@v3.3
@@ -64,8 +64,8 @@ jobs:
           modrinth-id: 1ury0R3s
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
-          name: "${{env.version}}"
-          version: "${{env.version}}"
+          name: "${{steps.get_version.outputs.version}}"
+          version: "${{steps.get_version.outputs.version}}"
           version-type: release
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
@@ -78,7 +78,7 @@ jobs:
           game-versions: ">=1.20.5"
           java: 21
 
-          files: fabric/build/libs/*${{env.version}}.jar
+          files: fabric/build/libs/*${{steps.get_version.outputs.version}}.jar
 
       - name: Publish (Forge)
         uses: Kir-Antipov/mc-publish@v3.3
@@ -89,8 +89,8 @@ jobs:
           modrinth-id: 1ury0R3s
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
-          name: "${{env.version}}"
-          version: "${{env.version}}"
+          name: "${{steps.get_version.outputs.version}}"
+          version: "${{steps.get_version.outputs.version}}"
           version-type: release
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
@@ -102,7 +102,7 @@ jobs:
           game-versions: ">=1.20.5"
           java: 21
 
-          files: forge/build/libs/*${{env.version}}.jar
+          files: forge/build/libs/*${{steps.get_version.outputs.version}}.jar
 
 
       - name: Publish (Neoforge)
@@ -114,11 +114,11 @@ jobs:
           modrinth-id: 1ury0R3s
           modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
 
-          github-tag: "v${{env.version}}"
+          github-tag: "v${{steps.get_version.outputs.version}}"
           github-token: "${{secrets.GH_TOKEN}}"
 
-          name: "${{env.version}}"
-          version: "${{env.version}}"
+          name: "${{steps.get_version.outputs.version}}"
+          version: "${{steps.get_version.outputs.version}}"
           version-type: release
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
@@ -130,4 +130,4 @@ jobs:
           game-versions: ">=1.20.5"
           java: 21
 
-          files: neoforge/build/libs/*${{env.version}}.jar
+          files: neoforge/build/libs/*${{steps.get_version.outputs.version}}.jar
