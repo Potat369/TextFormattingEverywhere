@@ -1,1 +1,1 @@
-- Get rid of single-jar as it breaks forge and neoforge
+- Fix crash on 1.21.9+

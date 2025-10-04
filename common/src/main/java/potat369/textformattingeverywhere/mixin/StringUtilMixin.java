@@ -8,8 +8,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(StringUtil.class)
 public class StringUtilMixin {
-    @Inject(method = "isAllowedChatCharacter", at = @At("RETURN"), cancellable = true)
+    // Prior to 1.20.9
+    @Inject(method = "isAllowedChatCharacter(C)Z", at = @At("RETURN"), cancellable = true)
     private static void isAllowedChatCharacter(char character, CallbackInfoReturnable<Boolean> cir) {
+        cir.setReturnValue(character != 167 ? cir.getReturnValue() : true);
+    }
+
+    // After 1.20.9
+    @Inject(method = "method_57175(I)Z", remap = false, at = @At("RETURN"), cancellable = true)
+    private static void isAllowedChatCharacterInt(int character, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(character != 167 ? cir.getReturnValue() : true);
     }
 }
