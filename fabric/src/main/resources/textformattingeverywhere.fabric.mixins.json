@@ -3,12 +3,6 @@
   "minVersion": "0.8",
   "package": "potat369.textformattingeverywhere.mixin",
   "refmap": "${mod_id}.refmap.json",
-  "compatibilityLevel": "JAVA_21",
-  "mixins": [],
-  "client": [],
-  "server": [],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  "compatibilityLevel": "JAVA_21"
 }
   

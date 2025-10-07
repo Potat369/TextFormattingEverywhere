@@ -2,11 +2,5 @@
   "required": true,
   "minVersion": "0.8",
   "package": "potat369.textformattingeverywhere.mixin",
-  "compatibilityLevel": "JAVA_18",
-  "mixins": [],
-  "client": [],
-  "server": [],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  "compatibilityLevel": "JAVA_18"
 }
